@@ -10,5 +10,5 @@ Para os valores de tensão, elaboramos um circuito capaz de reduzir a tensão da
 
    Com os dados de corrente e tensão enviados ao microcontrolador é realizado o processamento e envio para plataforma ThingSpeak através do módulo de comunicação ESP8266-01. Ao receber os dados, a plataforma IoT irá representa-los em graficamente de forma a tornar as informações simples e fáceis para o consumidor. Todo o processo explicado anteriormente está representado na Figura 1 abaixo.
      
-
+![1](https://user-images.githubusercontent.com/40185350/41261177-ee8048f4-6db0-11e8-92cc-0d597e2a7d34.png)
     
