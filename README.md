@@ -1,4 +1,5 @@
 
+
 # 1	DESENVOLVIMENTO
 
    Este capítulo apresentará todo o desenvolvimento de um protótipo de medidor inteligente de energia elétrica residencial, do projeto a execução, tendo como base alguns conceitos apresentados nos capítulos anteriores.
@@ -23,7 +24,12 @@ Para hardware foi utilizado os materiais listados no quadro 01 abaixo. Além dis
 
 Para o projeto foi o utilizado o microcontrolador Atmega328P da Atmel. Desta forma se fez necessário um estudo mais profundo sobre o conversor Analógico/Digital (AD) deste micro com o objetivo de obter os melhores resultados a partir do condicionamento dos sinais.
 
-A Figura 2 demonstra a arquitetura interna de um Conversor Analógico-Digital (ADC). A partir dela pode-se observar que existem 8 canais de entradas analógicas multiplexadas na entrada do conversor, onde somente 4 serão utilizadas neste projeto. Entre outras característi- cas do conversor estão os 10 bits de resolução, 8 bits de precisão e taxa máxima de amostragem de 76,9KSPS( KiloAmostras por segundo). Para os bits de resolução é definido que a faixa de 5Vcc pode ser dividida em 1024 degraus discretos de medição, como mostrado na fórmula (1.1).
+A Figura 2 demonstra a arquitetura interna de um Conversor Analógico-Digital (ADC). A partir dela pode-se observar que existem 8 canais de entradas analógicas multiplexadas na entrada do conversor, onde somente 4 serão utilizadas neste projeto. Entre outras característi- cas do conversor estão os 10 bits de resolução, 8 bits de precisão e taxa máxima de amostragem de 76,9KSPS( KiloAmostras por segundo). Para os bits de resolução é definido que a faixa de 5Vcc pode ser dividida em 1024 degraus discretos de medição, como mostrado na fórmula abaixo.
+
+![f1](https://user-images.githubusercontent.com/40185350/41261822-e3ebc3de-6db3-11e8-8786-f32fa207b8d0.png)
+
+Porém, se não forem calculadas médias a precisão do conversor estará em 8 bits. Isto siginifica que a unidade discreta de medição é de 5Vcc por 256 como pode ser visto na fórmula a seguir.
+
 
 
     
