@@ -1,4 +1,4 @@
-
+![f2](https://user-images.githubusercontent.com/40185350/41261885-31ee7658-6db4-11e8-87c2-f1e03a677665.png)
 
 # 1	DESENVOLVIMENTO
 
@@ -29,6 +29,11 @@ A Figura 2 demonstra a arquitetura interna de um Conversor Analógico-Digital (A
 ![f1](https://user-images.githubusercontent.com/40185350/41261822-e3ebc3de-6db3-11e8-8786-f32fa207b8d0.png)
 
 Porém, se não forem calculadas médias a precisão do conversor estará em 8 bits. Isto siginifica que a unidade discreta de medição é de 5Vcc por 256 como pode ser visto na fórmula a seguir.
+
+![f2](https://user-images.githubusercontent.com/40185350/41261885-31ee7658-6db4-11e8-87c2-f1e03a677665.png)
+
+É importante ressaltar que segundo especificações do ADC, existe a opção que utilize referência interna de 1,1V, porém utilizaremos o valor de Vcc 5V. Além disso, é possível trabalhar com referências externas, porém não será abordado neste trabalho.(PUHLMANN, 2015)
+
 
 
 
